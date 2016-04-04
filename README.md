@@ -10,7 +10,7 @@ The migration procedure is carried out in three stages:
 
 	Stage 1 - The execution  of a backup script from geonode source. 
 	This script is labelled src_backup and will reside on the geonode system that is the source of this procedure
-	Stage 2 - The execution of an integration script to download and "tar recover"backup files from the source to the destination geonode system.
+	Stage 2 - The execution of an integration script (dst_integrate.sh) to download and "tar recover"backup files from the source to the destination geonode system.
 	Stage 3 - An integration procedure to merge geonode databases (geonode, geonode_data) using an ETL tool such as CloverETL or Talend Studio. 
 	Or another alternative is develop a python script to integrate the databases.
 	
